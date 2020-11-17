@@ -1,15 +1,13 @@
 *{
     margin: 0px;
-    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
     width: 100%;
-    height: 80px;
-    padding: 10px;
+    height: 50px;
+    padding-top: 15px;
     margin: 0 auto;
-    background-color: #999999;
     position: sticky;
     top: 0px;
 }
@@ -25,20 +23,14 @@ nav ul li{
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    font-size: 30px;
-}
+    font-size: 20px;
 
-nav ul::after{
-    content: "";
-    display: table;
-    clear: both;
 }
 
 nav a{
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    color: #FFCC00 ;
-
+    color: #FFCC00;
 }
 
 nav a:hover{
@@ -50,7 +42,6 @@ nav a:hover{
     box-shadow: 0px 1px 2px #CCC;
     background-color: white;
     position: absolute;
-    margin-left: 60px;
     z-index: 1000;
 }
 
@@ -60,8 +51,7 @@ nav > ul li:hover .subMenu{
 
 /* permet que les éléments de notre sous menu s'affichent les uns sous les autres*/
 .subMenu li{
-    float: none;
-    width: 100%;
+    width: 60%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -79,6 +69,7 @@ nav > ul li:hover .subMenu{
 .dropMenu{
     color: #FFCC00;
 }
+
 /* ajoute apres le texte de l'onglet un ▼ de 15px de taille*/
 .dropMenu::after{
     content: "▼";
@@ -86,9 +77,14 @@ nav > ul li:hover .subMenu{
 }
 
 .title{
-    margin-top: 20px;
+    padding-top: 80px;
+    height: 400px;
     text-align: center;
     font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    background: url("../images/fondTitreElecOmega.jpg"), no-repeat;
+    background-size: 100%;
 }
 
 .title h1::after{
@@ -96,7 +92,7 @@ nav > ul li:hover .subMenu{
     color: #FFCC00;
 }
 
-nav #logo{
+nav li #logo{
     width: 80px;
     height: 80px;
 }

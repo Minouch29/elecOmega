@@ -1,3 +1,7 @@
+:root{
+    --yellow: #FFCC00;
+ }
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,7 +14,7 @@ nav{
     position: fixed;
     top: 0px;
     height: 50px;
-    background-color: white;
+    background-color: black;
 }
 
 nav ul{
@@ -30,7 +34,7 @@ nav ul li{
 nav a{
     display: inline-block;
     text-decoration: none;
-    color: #FFCC00;
+    color: var(--yellow);
 }
 
 nav a:hover{
@@ -63,11 +67,11 @@ nav > ul li:hover .subMenu{
 }
 
 .subMenu a:hover{
-    color: #FFCC00;
+    color:var(--yellow);
 }
 
 .dropMenu{
-    color: #FFCC00;
+    color: var(--yellow);
 }
 
 /* ajoute apres le texte de l'onglet un ▼ de 15px de taille*/
@@ -89,7 +93,7 @@ nav > ul li:hover .subMenu{
 
 .title h1::after{
     content: "Ω";
-    color: #FFCC00;
+    color: var(--yellow);
 }
 
 nav li #logo{

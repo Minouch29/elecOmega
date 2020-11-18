@@ -1,5 +1,10 @@
+:root{
+   --yellow: #FFCC00;
+   --grey: #999999;
+}
+
 .container{
-   width: 80%;
+   width: 90%;
    margin: auto;
 }
 
@@ -8,46 +13,78 @@
    margin: auto;
    width: 80%;
    text-align: center;
+   font-size: 1.3em;
 }
 
 .container h2{
    text-align: center;
-   font-size: 3em;
+   font-size: 2em;
    text-transform: uppercase;
 }
 
 .prestations{
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-around;
-    background-color:  #FFCC00;
+   display: flex;
+   justify-content: space-around;
+   background-color: var(--yellow);
+   padding: 20px;
 }
 
 .prestations img{
-   width: 120px; 
-   height: 120px;
+   width: 150px; 
+   height: 150px;
+   border: var(--yellow) solid 2px;
 }
 
-.prestations a{
-    text-decoration: none;
+a{
+   text-decoration: none;
 }
 
 
 figcaption{
    text-align: center;
-   color: white;
+   color: black;
    font-weight: bold;
-   background-color: #999999;
 }
 
 .prestations figcaption:hover{
    color: black;
-   background-color: #FFCC00;
+   background-color: var(--yellow);
 }
 
 .engagements{
    display: flex;
    justify-content: space-around; 
+   padding: 20px;
+}
+
+.engagements figure img{
+   padding: 30px;
+   border: var(--grey)solid 2px;
+   border-radius: 100px;
+}
+
+.informations{
+   display: flex;
+   justify-content: space-around;
+   background-color: var(--yellow);
+}
+
+.informations a{
+   color: black;
+}
+
+.informations a:hover{
+   font-weight: bold;
+   color: white;
+}
+
+.address{
+   margin-top: 50px;
+}
+
+.address p{
+   width: 100%;
+   font-size: 1em;
 }
 
 

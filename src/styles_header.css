@@ -23,8 +23,8 @@ nav ul{
 
 nav ul li{
     float: left;
-    width: 20%;
-    text-align: center;
+    margin-left: 10%;
+    text-align: left;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
@@ -38,7 +38,7 @@ nav a{
 }
 
 nav a:hover{
-    color:black;
+    color:white;
 }
 
 .subMenu{
@@ -47,6 +47,8 @@ nav a:hover{
     background-color: white;
     position: absolute;
     z-index: 1000;
+    margin: 0;
+    padding: 0;
 }
 
 nav > ul li:hover .subMenu{
@@ -55,15 +57,20 @@ nav > ul li:hover .subMenu{
 
 /* permet que les éléments de notre sous menu s'affichent les uns sous les autres*/
 .subMenu li{
-    width: 60%;
-    text-align: center;
+    width: 100%;
     text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: auto;
+    padding: 0;
 }
 
 .subMenu a{
-    padding: 10px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: black;
-    font-size: 20px;
+    font-size: 0.8em;
 }
 
 .subMenu a:hover{

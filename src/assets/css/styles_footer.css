@@ -1,0 +1,59 @@
+
+/*footer**/
+
+footer{
+    background-color:black;
+    margin-top:20px;
+    margin-bottom: 20px; 
+}
+
+li{
+    list-style-type: none;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+a{
+    color: #FFCC00;
+    text-decoration: none;
+}
+
+/**classe*/
+span[class^="icon-"] {
+    margin-right: 2em;
+    
+}
+
+.justify{
+    text-align: justify;   
+}
+
+.darkcolor{
+    color:white;
+}
+
+.patron{
+    color:#FFCC00;
+    font-family: fantasy;
+    font-size: 20px;
+    margin-bottom: 20px;   
+}
+
+.dsplay{
+    display: inline-block;
+    width: 23%;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-top: 15px;
+    margin-left: 30px;
+}
+
+.copyright{
+     text-align: center;
+     background-color:#f4f6f6;
+}
+ 

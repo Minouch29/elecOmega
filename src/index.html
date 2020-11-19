@@ -3,13 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Elec Ω - Electricité et domotique</title>
+        <meta name="viewport" content="width=device-width,initial-scale=2.0,maximum-scale=2.0,user-scalable=no">
         <meta 
             name="description" 
             content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage" 
         >
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="styles_header.css">
-        <link rel="stylesheet" href="styles_accueil.css">
+        <link rel="stylesheet" href="assets/css/styles_icones.css">
+        <link rel="stylesheet" href="assets/css/styles_header.css">
+        <link rel="stylesheet" href="assets/css/styles_accueil.css">
+        <link rel="stylesheet" href="assets/css/styles_footer.css">
+        
+
     </head>
     <body>
         <main>
@@ -26,7 +30,7 @@
                                 <li><a href="#">Maintenance</a></li>
                             </ul>
                         </li>
-                        <li><img id="logo" src="../images/logoElecOmega.png" alt="Logo ElecOmega"></li>
+                        <li><img id="logo" src="assets/images/logoElecOmega.png" alt="Logo ElecOmega"></li>
                         <li><a href="#">Réservations</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -37,61 +41,67 @@
                 </div>
             </header>
             <div class="container">
-                <p>Vous êtes à la recherche d'un artisan electricien sérieux et compétent ?</p>               
-                <p> Contactez Elec Ω, électricien/domotique à Calvisson(30420).</p>
-                <p>
-                    Riche de son expérience et spécialisée dans les secteurs de la domotique, électricité et la pose de portail (motorisé ou non),
-                    Elec Ω vous accompagne dans tous vos projets, que ce soit pour des missions d'installation, de maintenance ou de dépannage. Elec Ω
-                    intervient dans les secteurs de Calvisson et de Montpellier.
-                </p>
-                <p>
-                    Parce que chaqe projet est unique, votre électricien dialogue avec vous afin d'identifier 
-                    vos besoins et objectifs. Ensuite nous vous proposons la solution la plus adaptée à votre projet.
-                </p> 
+                <section class="presentation">
+                    <div class="paragraphe">
+                        <p>Vous êtes à la recherche d'un artisan electricien sérieux et compétent ?</p>               
+                        <p> Contactez Elec Ω, électricien/domotique à Calvisson(30420).</p>
+                        <p>
+                            Riche de son expérience et spécialisée dans les secteurs de la domotique, électricité et la pose de portail (motorisé ou non),
+                            Elec Ω vous accompagne dans tous vos projets, que ce soit pour des missions d'installation, de maintenance ou de dépannage. 
+                        </p>
+                        <p>Elec Ω intervient dans les secteurs de Calvisson et de Montpellier.</p>
+                        <p>
+                            Parce que chaqe projet est unique, votre électricien dialogue avec vous afin d'identifier 
+                            vos besoins et objectifs. Ensuite nous vous proposons la solution la plus adaptée à votre projet.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/images/electricite-elecOmega.jpg" alt="plusieurs icones représentant le métier d'électricien">
+                </section> 
                 <div class="prestationsContainer"> 
                     <h2>Prestations</h2>
-                    <div class="prestations">
+                    <section class="prestations">
                         <figure>
                             <a href="#">
-                                <img src="../images/elecOmega-installations.jpg" alt="installations">
+                                <img src="assets/images/elecOmega-installations.jpg" alt="installations">
                             </a>
                             <figcaption>Installations</figcaption>
                         </figure>
                         <figure>
                             <a href="#">
-                                <img src="../images/elecOmega-depannage.jpg" alt="depannage">
+                                <img src="assets/images/elecOmega-depannage.jpg" alt="depannage">
                             </a>  
                             <figcaption>Dépannage</figcaption>  
                         </figure>
                         <figure>
                             <a href="#">
-                                <img src="../images/elecOmega-maintenance.jpg" alt="maintenance">
+                                <img src="assets/images/elecOmega-maintenance.jpg" alt="maintenance">
                             </a>
                             <figcaption>Maintenance</figcaption>
                         </figure>
-                    </div> 
+                    </section> 
                 </div>
                 <h2>Nos engagements</h2>
-                <div class="engagements">
+                <section class="engagements">
                     <figure>
-                        <img src="../images/elecOmega-securite.png" alt="ouvrier avec casque">
+                        <img src="assets/images/elecOmega-securite.png" alt="ouvrier avec casque">
                         <figcaption>Sécurité</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/elecOmega-rapidite.png" alt="compteur vitesse">
+                        <img src="assets/images/elecOmega-rapidite.png" alt="compteur vitesse">
                         <figcaption>Rapidité</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/elecOmega-qualite.png" alt="ampoule">
+                        <img src="assets/images/elecOmega-qualite.png" alt="ampoule">
                         <figcaption>Qualité</figcaption>
                     </figure>
-                </div>
+                </section>
                 <h2>Nous situer</h2>
-                <div class="informations">
+                <section class="informations">
                     <div class="address">
-                        <p>Calvisson(30420)-France <span class="material-icons">location_on</span></p>
-                        <p><a href="#">contact@elec-ohm.fr <span class="material-icons">email</span></a></p>
-                        <p>07.81.13.33.94 <span class="material-icons">phone_android</span></p>
+                        <p><span class="icon-location2"> Calvisson(30420)-France</span></p>
+                        <p><a href="#"><span class="icon-mail2"> contact@elec-ohm.fr</span></a></p>
+                        <p><span class="icon-phone"> 07.81.13.33.94</span></p>
                     </div>
                     <div class="map">
                         <iframe 
@@ -103,10 +113,68 @@
                             tabindex="0">
                         </iframe>
                     </div>
-                </div>
+                </section>
             </div>
         </main>
     </body>
     <footer>
+        <section>
+            <div class="dsplay">
+                <img class="logo" src="assets/images/logoElecOmega.png" alt="logo">
+            </div>
+            <div class="dsplay">
+                <ul class="justify">
+                    <li>
+                        <p class="patron">Kamel RGUIG</p>
+                    </li>
+                    <li>
+                        <p class="darkcolor">INFORMATIONS</p>
+                    </li>
+                    <li>
+                        <a class="darkcolor" href="contact@elec-ohm.fr" title="mailclient">
+                            <span class="icon-mail2"> contact@elec-ohm.fr</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="darkcolor" href="07-81-13-33-94" title="telclient">
+                            <span class="icon-phone"> 07-81-13-33-94</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dsplay">
+                <ul class="justify">
+                    <li>
+                        <a href="accueil.html"><span class="icon-circle-right"></span>Accueil</a>
+                    </li>
+                    <li>
+                        <a href="prestations.html"><span class="icon-circle-right"></span>Prestations</a>
+                    </li>
+                    <li>
+                        <a href="reservation.html"><span class="icon-circle-right"></span>Réservation</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><span class="icon-circle-right"></span>Contact</a>
+                    </li>
+                    <li>
+                        <a href="mentionLegales.html"><span class="icon-circle-right"></span>Mention Légales</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dsplay">
+                <ul>
+                    <li>
+                        <p class="darkcolor">Suivez-nous!!</p>
+                    </li>
+                    <li class="dsplay">
+                        <a href="#" title="lien facebook">
+                            <span class="icon-facebook"></span>
+                        </a>
+                    </li>
+                </ul>
+        </section>
+        <section>
+            <p class="copyright">Copyright © .2021</p>
+        </section>
     </footer>
 </html>

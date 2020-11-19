@@ -3,6 +3,10 @@
    --grey: #999999;
 }
 
+body{
+   width: 100%;
+}
+
 .container{
    width: 90%;
    margin: auto;
@@ -13,13 +17,28 @@
    margin: auto;
    width: 80%;
    text-align: center;
-   font-size: 1.3em;
+   font-size: 1em;
 }
 
 .container h2{
    text-align: center;
    font-size: 2em;
    text-transform: uppercase;
+   margin-top: 100px;
+}
+
+.presentation{
+   display: flex;
+   margin: 50px;
+}
+
+.paragraphe{
+   margin-top: 100px;
+}
+
+.presentation img{
+   width: 550px;
+   height: 500px;
 }
 
 .prestations{

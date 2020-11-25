@@ -1,0 +1,39 @@
+:root{
+    --yellow: #FFCC00;
+}
+
+body{
+    width: 100%;
+}
+ 
+.container{
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+p{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text{
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+    background-color: var(--yellow);
+    border-radius: 25px;
+}  
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+

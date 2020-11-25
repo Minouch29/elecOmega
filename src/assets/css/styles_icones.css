@@ -34,6 +34,9 @@
 .icon-circle-right:before {
   content: "\ea42";
 }
+.icon-circle-down:before {
+  content: "\ea43";
+}
 .icon-embed:before {
   content: "\ea7f";
 }

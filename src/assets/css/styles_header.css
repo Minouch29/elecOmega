@@ -1,6 +1,6 @@
 :root{
     --yellow: #FFCC00;
- }
+}
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -8,13 +8,10 @@
 
 nav{
     width: 100%;
-    height: 50px;
-    padding-top: 15px;
     margin: 0 auto;
     position: fixed;
-    top: 0px;
-    height: 50px;
     background-color: black;
+    top: 0px;
 }
 
 nav ul{
@@ -23,12 +20,13 @@ nav ul{
 
 nav ul li{
     float: left;
-    margin-left: 10%;
-    text-align: left;
+    margin-left: 5%;
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
     font-size: 20px;
+    padding: 5px;
 }
 
 nav a{
@@ -41,6 +39,10 @@ nav a:hover{
     color:white;
 }
 
+nav > .nav-wrapper ul li:hover .subMenu{
+    display: block;
+}
+
 .subMenu{
     display: none;
     box-shadow: 0px 1px 2px #CCC;
@@ -49,10 +51,6 @@ nav a:hover{
     z-index: 1000;
     margin: 0;
     padding: 0;
-}
-
-nav > ul li:hover .subMenu{
-    display: block;
 }
 
 /* permet que les éléments de notre sous menu s'affichent les uns sous les autres*/
@@ -73,12 +71,8 @@ nav > ul li:hover .subMenu{
     font-size: 0.8em;
 }
 
-.subMenu a:hover{
+.dropMenu, .subMenu a:hover{
     color:var(--yellow);
-}
-
-.dropMenu{
-    color: var(--yellow);
 }
 
 /* ajoute apres le texte de l'onglet un ▼ de 15px de taille*/
@@ -88,14 +82,19 @@ nav > ul li:hover .subMenu{
 }
 
 .title{
-    padding-top: 80px;
-    height: 400px;
-    text-align: center;
-    font-size: 35px;
+    padding-top: 200px;
+    height: 300px;
     text-transform: uppercase;
-    color: white;
     background: url("../images/fondTitreElecOmega.jpg"), no-repeat;
     background-size: 100%;
+}
+
+.title h1{
+    margin: 0;
+    top: 180px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
 }
 
 .title h1::after{
@@ -103,8 +102,141 @@ nav > ul li:hover .subMenu{
     color: var(--yellow);
 }
 
-nav li #logo{
+#logo{
+    position: fixed;
+    top: 0;
+    float: left;
     width: 80px;
     height: 80px;
 }
 
+/*---------------------*\
+    @MEDIA
+\*---------------------*/
+@media screen and (max-width: 1024px){
+    #logo{
+        width: 40px;
+        height: 40px;
+        position: none;
+    }
+
+    /*---------------------*\
+        menu burger
+    \*---------------------*/
+    .menu{ 
+        display: none;
+        flex-basis: 100%; /* occupe 100% de la place et va à la ligne */
+    }
+
+    .menu-toggle{
+        color: white;
+        margin-top: 5px;
+        padding: .3em;
+        margin-left: 50px;
+    }
+
+    /* avec ~ on selectionne les elt class .menu précédés d'un elt class .menucheckbox
+       et avec la pseudo class :checked, on s'assure de selectionner .menu si .menu-checkbox est coché */
+    .menu-checkbox:checked ~ .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-checkbox:checked ~ .menu li {
+        display: block;
+    }
+
+    /* on selectionne label class .menu-toggle s'il est adjacent('+') à la checkbox cochée */
+    .menu-checkbox:focus + .menu-toggle{ outline: var(--yellow) auto 5px; }
+
+    .menu-checkbox{
+        opacity: 0;
+        position: absolute;
+        top: -5000px;
+    }
+
+    .nav-wrapper{
+        align-items: center; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav .nav-wrapper .menu li{
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .subMenu{
+        display: none;
+        box-shadow: 0px 1px 2px #CCC;
+        background-color: white;
+        position: absolute;
+        z-index: 1000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .subMenu li{
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin: auto;
+        padding: 0;
+    }
+    
+    .subMenu a{
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: black;
+        font-size: 0.8em;
+    }
+    
+    nav > .nav-wrapper ul li{
+        display: block;
+    }
+
+    nav > .nav-wrapper ul li:hover .subMenu{
+        display: block !important;
+    }
+
+    .dropMenu::after{
+        content: "▼";
+        font-size: 15px;
+    }
+
+    .title{
+        padding: 0;
+        height: 100px;
+        text-transform: uppercase;
+        background-size: 100%;
+    }
+
+    .title h1{
+        padding: 10px;
+        margin: 50px;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+    }
+
+
+
+
+
+    
+
+
+
+}

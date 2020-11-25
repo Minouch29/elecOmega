@@ -5,31 +5,36 @@ footer{
     background-color:black;
     margin-top:20px;
     margin-bottom: 20px; 
+    font-size: 0.9em;
 }
 
-li{
+footer li{
     list-style-type: none;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
-a{
+footer a{
     color: #FFCC00;
     text-decoration: none;
 }
 
+
 /**classe*/
 span[class^="icon-"] {
     margin-right: 2em;
-    
 }
 
 .justify{
     text-align: justify;   
 }
 
+.justify p{
+    color: #FFCC00;
+}
+
 .darkcolor{
-    color:white;
+    color:white !important;
 }
 
 .patron{
@@ -52,8 +57,13 @@ span[class^="icon-"] {
     margin-left: 30px;
 }
 
+.icon-facebook{
+    font-size: 30px;
+    margin-left: 25px
+}
+
 .copyright{
      text-align: center;
      background-color:#f4f6f6;
 }
- 
+

@@ -13,11 +13,12 @@ body{
 }
 
 .container p{
-   padding: 10px;
+   padding: 5px;
    margin: auto;
    width: 80%;
    text-align: center;
-   font-size: 1em;
+   font-size: 1.2em;
+   font-weight: bold;
 }
 
 .container h2{
@@ -32,8 +33,8 @@ body{
    margin: 50px;
 }
 
-.paragraphe{
-   margin-top: 100px;
+.presentation h2{
+   margin-top: 30px;
 }
 
 .presentation img{
@@ -49,25 +50,25 @@ body{
 }
 
 .prestations img{
-   width: 150px; 
-   height: 150px;
-   border: var(--yellow) solid 2px;
+   width: 200px; 
+   height: auto;
+   transition: .3s ease-in-out !important;
+}
+/*arrondi l'image au survol*/
+.prestations img:hover{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
 }
 
 a{
    text-decoration: none;
 }
 
-
 figcaption{
    text-align: center;
    color: black;
    font-weight: bold;
-}
-
-.prestations figcaption:hover{
-   color: black;
-   background-color: var(--yellow);
 }
 
 .engagements{
@@ -80,6 +81,12 @@ figcaption{
    padding: 30px;
    border: var(--grey)solid 2px;
    border-radius: 100px;
+}
+.engagements div{
+    border: 3px var(--yellow) solid;
+    border-radius: 30px;
+    width: 30%;
+    text-align: center;
 }
 
 .informations{

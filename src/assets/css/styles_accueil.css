@@ -3,12 +3,10 @@
    --grey: #999999;
 }
 
-body{
-   width: 100%;
-}
+body{ width: 100%; }
 
 .container{
-   width: 90%;
+   width: 100%;
    margin: auto;
 }
 
@@ -33,9 +31,7 @@ body{
    margin: 50px;
 }
 
-.presentation h2{
-   margin-top: 30px;
-}
+.presentation h2{ margin-top: 30px; }
 
 .presentation img{
    width: 550px;
@@ -44,6 +40,7 @@ body{
 
 .prestations{
    display: flex;
+   margin: 50px;
    justify-content: space-around;
    background-color: var(--yellow);
    padding: 20px;
@@ -54,6 +51,7 @@ body{
    height: auto;
    transition: .3s ease-in-out !important;
 }
+
 /*arrondi l'image au survol*/
 .prestations img:hover{
    width: 200px;
@@ -61,9 +59,7 @@ body{
    border-radius: 50%;
 }
 
-a{
-   text-decoration: none;
-}
+a{ text-decoration: none; }
 
 figcaption{
    text-align: center;
@@ -73,6 +69,7 @@ figcaption{
 
 .engagements{
    display: flex;
+   margin: 50px;
    justify-content: space-around; 
    padding: 20px;
 }
@@ -82,6 +79,7 @@ figcaption{
    border: var(--grey)solid 2px;
    border-radius: 100px;
 }
+
 .engagements div{
     border: 3px var(--yellow) solid;
     border-radius: 30px;
@@ -89,28 +87,85 @@ figcaption{
     text-align: center;
 }
 
-.informations{
-   display: flex;
-   justify-content: space-around;
-   background-color: var(--yellow);
-}
+/*---------------------*\
+    @MEDIA
+\*---------------------*/
+@media screen and (max-width: 1024px){
+   body{
+      width: auto;
+   }
+   .container{
+      width: 100%;
+      margin: 0;
+   }
 
-.informations a{
-   color: black;
-}
+   .container p{ font-size: 0.8em;    }
 
-.informations a:hover{
-   font-weight: bold;
-   color: white;
-}
+   .container h2{
+      text-align: center;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      margin-top: 20px;
+   }
 
-.address{
-   margin-top: 50px;
-}
+   .presentation{
+      display: block;
+      margin: 10px;
+   }
 
-.address p{
-   width: 100%;
-   font-size: 1em;
+   .presentation img{
+      display: block;
+      width: 250px;
+      height: 250px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .prestationsContainer{
+      margin: 10px;
+   }
+
+   .prestations{
+      display: block;
+      margin: 10px;
+      background-color: transparent;
+      padding: 0;
+      width: 100%;
+   }
+   
+   .prestations> figure{
+      padding: 10px;
+      width: 200px; 
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid var(--yellow);
+      border-radius: 30px;
+   }
+
+   .engagements{
+      display: block;
+      margin: 10px; 
+      padding: 20px;
+   }
+
+   .engagements figure img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px;
+      border: var(--grey)solid 2px;
+      border-radius: 100px;
+   }
+   
+   .engagements div{
+      margin: 10px auto 10px auto;
+       border: 2px var(--yellow) solid;
+       border-radius: 30px;
+       width: 100%;
+       text-align: center;
+   }
 }
 
 

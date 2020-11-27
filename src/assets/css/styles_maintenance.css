@@ -1,10 +1,6 @@
-:root{
-    --yellow: #FFCC00;
-}
+:root{ --yellow: #FFCC00; }
 
-body{
-    width: 100%;
-}
+body{ width: 100%; }
  
 .container{
     width: 90%;
@@ -57,9 +53,7 @@ p{
     font-weight: bold;
 }
 
-a{
-    text-decoration: none;
-}
+a{ text-decoration: none; }
 
 .container img{
     display: block;
@@ -75,17 +69,14 @@ a{
     margin-bottom: 20px;
 }
 
-#elecCompteur{
-    margin-right: 100px;
-}
+#elecCompteur{ margin-right: 100px; }
 
 /*---------------------*\
     @MEDIA
 \*---------------------*/
 @media screen and (max-width: 1024px){
-    body{
-        width: auto;
-    }
+    body{ width: auto; }
+    
     .container{
         width: 100%;
         margin: 0;

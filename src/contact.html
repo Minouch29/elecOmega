@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta 
+            name="description" 
+            content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage" 
+        >
+
+        <link rel="stylesheet" href="assets/css/styles_icones.css">
+        <link rel="stylesheet" href="assets/css/styles_header.css">
+        <link rel="stylesheet" href="assets/css/styles_contact.css">
+        <link rel="stylesheet" href="assets/css/styles_footer.css">
+        <title>Elec Ω - Électricité et domotique</title>
+        
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                    <img id="logo" src="assets/images/logoElecOmega.png" alt="Logo ElecOmega">
+                    <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                    <label for="menu-checkbox" class="menu-toggle">&#9776 Menu</label>
+                    <ul class="menu">        
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li class="dropMenu">
+                            Prestations
+                            <!--sous-menu-->
+                            <ul class="subMenu">
+                                <li><a href="installations.html">Installations</a></li>
+                                <li><a href="depannage.html">Dépannage</a></li>
+                                <li><a href="maintenance.html">Maintenance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="title"> 
+                <h1>Elec </h1>
+            </div>
+        </header>
+        <div class="contact">
+            <div class="form">
+                <h2>Contactez-nous</h2>
+                <form action="post">
+                    <label for="name">Nom:</label> 
+                    <input type="text" name="name" id="name" placeholder="Saississez votre nom">
+                    <label for="prenom">Prénom:</label> 
+                    <input type="text" name="prenom" id="prenom" placeholder="Saississez votre prénom">
+                    <label for="email">Email:</label> 
+                    <input type="text" name="email" id="email" placeholder="Saississez votre email">
+                    <label for="object">Objet:</label>
+                    <textarea name="object" id="object" cols="30" rows="10" placeholder="Objet de votre demande"></textarea>
+                    <input type="submit" value="Valider">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

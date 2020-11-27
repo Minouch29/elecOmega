@@ -2,24 +2,28 @@
 <html lang='fr'>
     <head>
         <meta charset="utf-8">
-        <title>Elec Ω - Electricité et domotique</title>
-        <meta name="viewport" content="width=device-width,initial-scale=2.0,maximum-scale=2.0,user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta 
             name="description" 
             content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage" 
         >
+
         <link rel="stylesheet" href="assets/css/styles_icones.css">
         <link rel="stylesheet" href="assets/css/styles_header.css">
         <link rel="stylesheet" href="assets/css/styles_maintenance.css">
         <link rel="stylesheet" href="assets/css/styles_footer.css">
+        <title>Elec Ω - Électricité et domotique</title>
         
 
     </head>
     <body>
-        <main>
-            <header>
-                <nav>
-                    <ul>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                    <img id="logo" src="assets/images/logoElecOmega.png" alt="Logo ElecOmega">
+                    <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                    <label for="menu-checkbox" class="menu-toggle">&#9776 Menu</label>
+                    <ul class="menu">        
                         <li><a href="accueil.html">Accueil</a></li>
                         <li class="dropMenu">
                             Prestations
@@ -30,17 +34,18 @@
                                 <li><a href="#">Maintenance</a></li>
                             </ul>
                         </li>
-                        <li><img id="logo" src="assets/images/logoElecOmega.png" alt="Logo ElecOmega"></li>
                         <li><a href="reservation.html">Réservation</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </nav>
-                <div class="title"> 
-                    <h1>Elec </h1>
-                    <h2>électricité et Domotique</h2>
                 </div>
-            </header>
-            <div class="container">
+            </nav>
+            <div class="title"> 
+                <h1>Elec </h1>
+            </div>
+        </header>
+        <main>
+            <h2>Maintenance</h2>
+            <div class="container"> 
                 <div class="text">
                     <p>
                         C'est bien connu, il faut mieux prévenir que guérir. Et ce dicton est aussi valable pour votre 
@@ -48,23 +53,24 @@
                     </p>
                     <p>
                         C'est pourquoi, afin de vous accompagner au mieux, Elec Ω vous propose ses services pour la maintenance 
-                        électrique de vos différents appareillages.
+                        électrique de vos différents appareillages et installations.
                     </p>
-                </div>
-                <img src="assets/images/maintenanceElecOmega.jpg" alt="electricien testant des fusibles">
-            </div>
-            <div class="container">
-                <img src="assets/images/fusibleMaintenanceElecOmega.jpg" alt="fusibles">
-                <div class="text">
                     <p>
-                        <a href="contact.html">Contactez-nous</a> 
-                        pour nous faire part de votre demande de maintenance électrique et nous vous répondrons 
-                        dans les meilleurs délais.
-        
+                        Alors n'hésitez pas à prendre rendez-vous pour une intervention rapide. 
                     </p>
+                    <a href="reservation.html">Réserver</a>
+                    <p>
+                        Ou à nous contactez pour nous faire part de votre demande 
+                        de maintenance électrique et nous vous répondrons dans les meilleurs délais.
+                    </p>
+                    <a href="contact.html">Contacter</a>
+
+                </div>
+                <div class="photos">
+                    <img src="assets/images/elecOmegaMaintenance.jpeg" id="elecMateriel" alt="electricien avec son matériel">
+                    <img src="assets/images/maintenanceElecOmega.jpeg" id="elecCompteur" alt="electricien testant un compteur">
                 </div>
             </div>
-            
         </main>
     </body>
     <footer>

@@ -1,69 +1,136 @@
+/**My css footer**/
 
-/*footer**/
+:root{ --yellow: #FFCC00; }
 
-footer{
-    background-color:black;
+*{ font-family: Arial, Helvetica, sans-serif; }
+
+footer{  
     margin-top:20px;
-    margin-bottom: 20px; 
-    font-size: 0.9em;
+    margin-bottom: 20px;
+    color:var(--yellow);
+    background-color:black;   
 }
 
 footer li{
     list-style-type: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top:5px;
+    margin-bottom: 5px; 
 }
 
 footer a{
-    color: #FFCC00;
+    color:var(--yellow);
     text-decoration: none;
 }
 
+/**class*/
 
-/**classe*/
-span[class^="icon-"] {
-    margin-right: 2em;
-}
-
-.justify{
-    text-align: justify;   
-}
-
-.justify p{
-    color: #FFCC00;
-}
-
-.darkcolor{
-    color:white !important;
-}
+.justify{ text-align: justify; }
 
 .patron{
-    color:#FFCC00;
+    color:var(--yellow);
     font-family: fantasy;
     font-size: 20px;
-    margin-bottom: 20px;   
+    margin-bottom: 20px;  
 }
 
 .dsplay{
-    display: inline-block;
-    width: 23%;
+    display:inline-block;
+    width: 24%;  
+    margin-top:20px; 
 }
 
 .logo{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     padding-top: 15px;
-    margin-left: 30px;
-}
-
-.icon-facebook{
-    font-size: 30px;
-    margin-left: 25px
+    margin-right: 20px;  
 }
 
 .copyright{
      text-align: center;
      background-color:#f4f6f6;
+     color:black;  
+}
+ 
+/*style du sous menu Prestations*/
+.dropbtn {
+    background-color: var(--yellow);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  
+.dropdown {
+    text-align: justify;
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    margin-top: -160px;
+    border-radius: 6px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 1px 2px  rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover { color: var(--yellow); }
+
+.prestationsFooter:hover .dropdown-content { display: block; }
+  
+/* ajoute apres le texte de l'onglet un ▼ de 15px de taille*/
+
+.dropdown p::after{
+    content: "▼";
+    font-size: 15px;
 }
 
+
+/**Médias querys  */
+
+@media screen and (max-width:576px){
+    
+    footer{
+        width: 100%;
+        background-color: black;
+        font-size:11px;   
+    }
+    
+    footer .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .dsplay{
+        display:inline-block;
+        width:93%;
+        margin-left: 5px;
+        margin-bottom:20px;
+        margin-right: 10px;
+        text-align: justify; 
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 10px 2em;   
+    }
+}
+
+
+  

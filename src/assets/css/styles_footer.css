@@ -40,10 +40,10 @@ footer a{
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    padding-top: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    border: 2px solid var(--yellow);
     margin-right: 20px;  
 }
 
@@ -92,9 +92,14 @@ footer a{
   
 /* ajoute apres le texte de l'onglet un ▼ de 15px de taille*/
 
-.dropdown p::after{
+.dropdown .prestationsFooter::after{
     content: "▼";
-    font-size: 15px;
+    font-size: 10px;
+}
+
+.icon-facebook{
+    font-size: 25px;
+    margin-left: 35px;
 }
 
 
@@ -105,7 +110,7 @@ footer a{
     footer{
         width: 100%;
         background-color: black;
-        font-size:11px;   
+        font-size: 11px;   
     }
     
     footer .logo{

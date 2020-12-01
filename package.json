@@ -1,0 +1,35 @@
+{
+  "name": "elecomega",
+
+  "version": "1.0.0",
+
+  "description": "site web ElecOmega(stage)",
+
+  "main": "index.js",
+  
+  "scripts": {
+    "start": "node src/index.js",
+    "local": "nodemon src/index.js"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghislaine34/elecOmega.git"
+  },
+
+  "author": "ghislaine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ghislaine34/elecOmega/issues"
+  },
+
+  "homepage": "https://github.com/Ghislaine34/elecOmega#readme",
+
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6"
+  },
+
+  "devDependencies": {}
+}

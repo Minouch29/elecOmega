@@ -95,7 +95,6 @@ nav > .nav-wrapper ul li:hover .subMenu{ display: block; }
 #logo{
     border: 2px solid var(--yellow);
     border-radius: 30px;
- 
     position: fixed;
     top: 0;
     float: left;

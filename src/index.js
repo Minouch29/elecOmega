@@ -1,9 +1,15 @@
 import express from "express";
+import path from 'path';
 
 const app = express();
-const port = 8888;
+const port = 8080;
+
+app.set('views', path.join(__dirname, 'resources/static/'));
+app.set('view engine', 'ejs');
 
 app.use('/', express.static('src/resources/static'));
 
-app.listen(port, () => console.log(`Mon premier serveur node avec express sur le port ${port}`));
+app.get('/', (req, res) => res.render('accueil', {port}));
+
+app.listen(port);
 

@@ -7,6 +7,9 @@
             name="description" 
             content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage" 
         >
+        <script>
+            const port = "<%= port %>";
+        </script>
 
         <link rel="stylesheet" href="assets/css/styles_icones.css">
         <link rel="stylesheet" href="assets/css/styles_header.css">
@@ -16,32 +19,7 @@
         
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="nav-wrapper">
-                    <img id="logo" src="assets/images/logoElecOmega.png" alt="Logo ElecOmega">
-                    <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
-                    <label for="menu-checkbox" class="menu-toggle">&#9776; Menu</label>
-                    <ul class="menu">        
-                        <li><a href="#">Accueil</a></li>
-                        <li class="dropMenu">
-                            Prestations
-                            <!--sous-menu-->
-                            <ul class="subMenu">
-                                <li><a href="installations.html">Installations</a></li>
-                                <li><a href="depannage.html">Dépannage</a></li>
-                                <li><a href="maintenance.html">Maintenance</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="reservation.html">Réservation</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="title"> 
-                <h1>Elec </h1>
-            </div>
-        </header>
+        <%- include('header') %>
         <main>
             <div class="container">  
                 <section class="presentation">
@@ -136,69 +114,6 @@
                 </section>
             </div>
         </main>
-        <footer>
-            <div class="box">
-                <div class="dsplay">
-                    <img class="logo" src="assets/images/logoElecOmega.png" alt="logo">
-                </div>
-                <div class="dsplay">
-                    <ul class="justify">
-                        <li>
-                            <p class="patron">Kamel RGUIG</p>
-                        </li>
-                        <li>
-                            <p>INFORMATIONS</p>
-                        </li>
-                        <li>
-                            <a href="contact@elec-ohm.fr" title="mailclient">
-                                <span class="icon-mail2">contact@elec-ohm.fr</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="07-81-13-33-94" title="telclient">
-                                <span class="icon-phone">07-81-13-33-94</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="dropdown dsplay">
-                    <ul>
-                        <li class="prestationsFooter">
-                            Prestations
-                            <ul class="dropdown-content">
-                                <li><a href="installations.html">Installations</a></li>
-                                <li><a href="depannage.html">Dépannage</a></li>
-                                <li><a href="maintenance.html">Maintenance</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="reservation.html"><span class="icon-circle-right"></span>Réservation</a>
-                        </li>
-    
-                        <li>
-                            <a href="contact.html"><span class="icon-circle-right"></span>Contact</a>
-                        </li>
-                        <li>
-                            <a href="mentionLegales.html"><span class="icon-circle-right"></span>Mention Légales</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="dsplay">
-                    <ul>
-                        <li>
-                            <p>suivez-nous !!</p>
-                        </li>
-                        <li class="dsplay">
-                            <a href="#" title="lien facebook">
-                                <span class="icon-facebook"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <p class="copyright">Copyright © .2021</p>
-            </div>
-        </footer>
+        <%- include('footer') %>
     </body>
 </html>

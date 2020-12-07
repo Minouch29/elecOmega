@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+            name="description" 
+            content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage" 
+        >
+
+        <link rel="stylesheet" href="assets/css/styles_icones.css">
+        <link rel="stylesheet" href="assets/css/styles_header.css">
+        <link rel="stylesheet" href="assets/css/styles_contact.css">
+        <link rel="stylesheet" href="assets/css/styles_footer.css">
+        <title>Elec Ω - Électricité et domotique</title>
+        
+
+    </head>
+    <body>
+        <%- include('header') %>
+        <div class="contact">
+            <div class="form">
+                <h2>Contactez-nous</h2>
+                <form action="post">
+                    <label for="name">Nom:</label> 
+                    <input type="text" name="name" id="name" placeholder="Saississez votre nom">
+                    <label for="prenom">Prénom:</label> 
+                    <input type="text" name="prenom" id="prenom" placeholder="Saississez votre prénom">
+                    <label for="email">Email:</label> 
+                    <input type="text" name="email" id="email" placeholder="Saississez votre email">
+                    <label for="object">Objet:</label>
+                    <textarea name="object" id="object" cols="30" rows="10" placeholder="Objet de votre demande"></textarea>
+                    <input type="submit" value="Valider">
+                </form>
+            </div>
+        </div>
+        <%- include('footer') %>
+    </body>
+</html>

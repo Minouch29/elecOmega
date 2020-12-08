@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset="utf-8">
+    <title>elecOmega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage">
+
+    <link rel="stylesheet" href="assets/css/styles_icones.css">
+    <link rel="stylesheet" href="assets/css/styles_header.css">
+    <link rel="stylesheet" href="assets/css/styles_depannage.css">
+    <link rel="stylesheet" href="assets/css/styles_footer.css">
+
+
+</head>
+
+<body>
+    <%- include('header') %>
+    <main class="container">
+        <section class="section-image">
+            <div>
+                <img src="assets/images/depannage1.jpg">
+                <a   href="/reservation" > <input class="btn"type="button" value="Réservez"> </a>
+            </div>
+            <div>
+                <img src="assets/images/depannage.jpg">
+                <a   href="./contact.html" > <input class="btn"type="button" value="contactez-nous"> </a>
+            </div>
+        </section>
+        <section >
+            <div  class="description">
+                <p>
+                    ElecOmega s’engage à améliorer votre confort au quotidien et vous propose le
+                    diagnostic et le dépannage de vos installations électriques et de vos portails.<br>
+
+                    Vous avez-la possibilité de réservez un creneau en ligne qui vous sera confirmer par un technicien<br>
+                    diagnostic et le dépannage de vos installations électriques et de vos portails.
+                    
+                    Pour toute demande complémentaire concernant une intervention en dépannage,vous<br>
+                    vous avez la possibilité de nous contacter en cliquant sur le bouton ci.
+                </p>
+            </div>
+        </section>
+    </main>
+    <%- include('footer') %>
+</body>
+</html>

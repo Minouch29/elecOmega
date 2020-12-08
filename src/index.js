@@ -18,5 +18,7 @@ app.get('/maintenance', (req, res) => res.render('maintenance'));
 app.get('/contact', (req, res) => res.render('contact'));
 app.get('/reservation', (req, res) => res.render('reservation'));
 
+app.get('/mentionLegales', (req, res) => res.render('mentionLegales'));
+
 app.listen(port);
 

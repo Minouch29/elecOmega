@@ -15,6 +15,7 @@ h2{
     text-transform: uppercase;
     margin-top: 80px;
     margin-bottom: 50px;
+    color:rgb(8, 8, 85);
 }
 
 .text{
@@ -62,6 +63,7 @@ a{ text-decoration: none; }
     padding: 10px;
     border: 3px solid var(--yellow);
     border-radius: 30px;
+    box-shadow: 10px 10px 5px #61605e;
 }
 
 #elecMateriel{

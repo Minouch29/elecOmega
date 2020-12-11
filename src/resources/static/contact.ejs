@@ -22,13 +22,33 @@
             <div class="form">
                 <h2>Contactez-nous</h2>
                 <form action="post">
-                    <label for="name">Nom:</label> 
-                    <input type="text" name="name" id="name" placeholder="Saississez votre nom" required>
+                    <label class="required" for="name">Nom:</label> 
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Saississez votre nom" 
+                        pattern="[a-zA-z]+" 
+                        required
+                    >
                     <label for="prenom">Prénom:</label> 
-                    <input type="text" name="prenom" id="prenom" placeholder="Saississez votre prénom" required>
-                    <label for="email">Email:</label> 
-                    <input type="text" name="email" id="email" placeholder="Saississez votre email" required>
-                    <label for="object">Objet:</label>
+                    <input 
+                        type="text" 
+                        name="prenom" 
+                        id="prenom" 
+                        pattern="[a-zA-z]+" 
+                        placeholder="Saississez votre prénom" 
+                    >
+                    <label class="required" for="email">Email:</label> 
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Saississez votre email" 
+                        pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}"
+                        required
+                    >
+                    <label class="required" for="object">Objet:</label>
                     <textarea name="object" id="object" cols="30" rows="10" placeholder="Objet de votre demande" required></textarea>
                     <input type="submit" value="Valider">
                 </form>

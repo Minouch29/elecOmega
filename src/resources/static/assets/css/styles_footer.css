@@ -11,6 +11,17 @@ footer{
     background-color:black;   
 }
 
+footer .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    border: 2px solid var(--yellow);
+    margin-left: 20px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 footer li{
     list-style-type: none;
     margin-top:5px;
@@ -39,14 +50,6 @@ footer a{
     margin-top:20px; 
 }
 
-.logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 30%;
-    border: 2px solid var(--yellow);
-    margin-right: 20px;  
-}
-
 .copyright{
      text-align: center;
      background-color:#f4f6f6;
@@ -69,13 +72,13 @@ footer a{
 }
   
 .dropdown-content {
-    margin-top: -160px;
+    margin-top: -165px;
     border-radius: 6px;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 1px 2px  rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
   
@@ -90,8 +93,7 @@ footer a{
 
 .prestationsFooter:hover .dropdown-content { display: block; }
   
-/* ajoute apres le texte de l'onglet un ▼ de 15px de taille*/
-
+/* ajoute apres le texte de l'onglet un ▼ de 10px de taille*/
 .dropdown .prestationsFooter::after{
     content: "▼";
     font-size: 10px;
@@ -102,10 +104,11 @@ footer a{
     margin-left: 35px;
 }
 
+/*---------------------*\
+    @MEDIA
+\*---------------------*/
 
-/**Médias querys  */
-
-@media screen and (max-width:576px){
+@media screen and (max-width:1024px){
     
     footer{
         width: 100%;
@@ -114,27 +117,49 @@ footer a{
     }
     
     footer .logo{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%; 
-        margin-top: 20px;
-        margin-left: 30px;
+        width: 65px;
+        height: 65px;
+        margin-left: 10px;  
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .justify{ padding-left: 5px; }
+
+    .patron{
+        font-size: 15px;
+        margin-bottom: 10px; 
+        margin-top: 5px; 
     }
 
     .dsplay{
         display:inline-block;
-        width:93%;
+        width:97%;
         margin-left: 5px;
-        margin-bottom:20px;
-        margin-right: 10px;
+        margin-right: 5px;
+        margin-top: 5px;
         text-align: justify; 
     }
 
     .box {
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
         grid-gap: 10px 2em;   
     }
+
+    .dropdown-content {
+        margin-top:-130px;
+        margin-left:60px;
+    }
+
+    .suivez-nous{ display: none; }
+
+    .icon-facebook{
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    footer ul{ padding-left: 5px; }
 }
 
 

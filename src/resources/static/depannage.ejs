@@ -18,31 +18,35 @@
 
 <body>
     <%- include('header') %>
-    <main class="container">
-        <section class="section-image">
-            <div>
-                <img src="assets/images/depannage1.jpg">
-                <a   href="/reservation" > <input class="btn"type="button" value="Réservez"> </a>
+    <main>
+        <h2>Dépannage</h2>
+        <div class="container">
+            <div class="photos">
+                <div>
+                    <img src="assets/images/depannage1.jpg" id="elecCables" alt="cable et plan">
+                </div>
+                <div>
+                    <img src="assets/images/depannage.jpg"  id="elecCompteur" alt="armoire à fusibles">
+                </div>
             </div>
-            <div>
-                <img src="assets/images/depannage.jpg">
-                <a   href="./contact.html" > <input class="btn"type="button" value="contactez-nous"> </a>
-            </div>
-        </section>
-        <section >
-            <div  class="description">
+            <div class="text">
                 <p>
-                    ElecOmega s’engage à améliorer votre confort au quotidien et vous propose le
-                    diagnostic et le dépannage de vos installations électriques et de vos portails.<br>
-
-                    Vous avez-la possibilité de réservez un creneau en ligne qui vous sera confirmer par un technicien<br>
+                    Elec Ω s’engage à améliorer votre confort au quotidien et vous propose le
                     diagnostic et le dépannage de vos installations électriques et de vos portails.
-                    
-                    Pour toute demande complémentaire concernant une intervention en dépannage,vous<br>
-                    vous avez la possibilité de nous contacter en cliquant sur le bouton ci.
                 </p>
+                <p>
+                    Vous avez-la possibilité de réserver un créneau en ligne via notre formulaire de réservation 
+                    qui vous sera confirmé par un technicien diagnostic.
+                </p>
+                <a href="/reservations">Réserver</a>
+                <p>
+                    Pour toute demande complémentaire concernant une intervention en dépannage,
+                    vous avez la possibilité de nous contacter via notre formulaire de contact.
+                    Une réponse vous sera faite dans les plus brefs délais.
+                </p>
+                <a href="/contact">Contacter</a>
             </div>
-        </section>
+        </div>
     </main>
     <%- include('footer') %>
 </body>

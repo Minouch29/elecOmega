@@ -1,103 +1,142 @@
 :root{ --yellow: #FFCC00; }
 
-body{
-    width: 100%;
-    margin: 0 auto;
-}
-  
-.container img{
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 50%;
-    height:200px;
-    margin-left: 150px;
-    margin-top:20px;
-    margin-bottom:20px ;
-}
-    
-.container img:hover{ transform: scaleX(-1); }
-  
+body{ width: 100%; }
+ 
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-gap: 10px 2em;
-    justify-content: center;   
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
 }
-      
-.description{
-    background-color: var(--yellow);
-    margin-top: 150px;
-    border-radius:5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: auto; 
-}
-  
-.description > p{
-    color:black;
+
+h2{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:30px;
-}  
-  
-.section-image{
-    align-items: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    color:rgb(8, 8, 85);
 }
-  
-.btn{
+
+.text{
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+    padding: 30px;
     background-color: var(--yellow);
-    border:none;
-    border-radius:8px;
+    border-radius: 25px;
+}
+
+.text p{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text a{
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 10px;
     color: white;
-    padding: 15px 32px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 1.8em;
     text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    align-items: center;
-    margin-left:300px;
+}
+
+.text a:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+a{ text-decoration: none; }
+
+.container img{
+    display: block;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    border: 3px solid var(--yellow);
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #61605e;
+}
+
+#elecCables{
+    margin-right: 100px;
     margin-bottom: 20px;
 }
-  
-.btn:hover{
-    background-color: #999999;
-    color: white;
-}
-  
-/**Médias querys */
-  
- @media screen and (max-width:1024px){
 
-    .container{
-        display: grid;
-        height: auto;
-        grid-template-columns: 1fr;
-        width: 100%;
-    } 
+#elecCompteur{ margin-left: 100px; }
+
+/*---------------------*\
+    @MEDIA
+\*---------------------*/
+@media screen and (max-width: 1024px){
+    body{ width: auto; }
     
-    main img {
-        border:2px #c50d2f outset ;
-        border-radius: 10px;
-        padding: 40px;
-        width:45%; 
-        height: auto;
-        margin-left:80px;
-        margin-right: 80px;
-    } 
-      
-    .btn{ margin-left:130px; }
-      
-    .description{
-         height:auto;
-        width: auto;
-        font-size:13px; 
-        background-color: #c50d2f;
-        margin-top:5px;
-        margin-left: 10px;
-        margin-right:10px;
+    .container{
+        width: 100%;
+        margin: 0;
+        display: inline;
+    }
+  
+    .container p{ font-size: 0.8em; }
+  
+    h2{
+        text-align: center;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-top: 20px;
     }
 
-} 
-  
+    .text{
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+        padding: 30px;
+        background-color: var(--yellow);
+        border-radius: 25px;
+    }
+
+    .text p{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .text a{
+        width: 100px;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px black;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .container img{
+        display: block;
+        width: 250px;
+        height: auto;
+        padding: 10px;
+        border: 3px solid var(--yellow);
+        border-radius: 30px;
+    }
+    
+    #elecCables, #elecCompteur{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+}

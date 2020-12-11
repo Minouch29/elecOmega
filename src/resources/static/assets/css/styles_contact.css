@@ -59,6 +59,11 @@ input[type="submit"]:hover{
     box-shadow: 5px 5px 5px black;
 }
 
+.required::after{
+    content: "*";
+    color: red;
+}
+
 /*---------------------*\
     @MEDIA
 \*---------------------*/

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset="utf-8">
+    <title>elecOmega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage">
+
+    <link rel="stylesheet" href="./assets/css/styles_icones.css">
+    <link rel="stylesheet" href="./assets/css/styles_header.css">
+    <link rel="stylesheet" href="./assets/css/styles_reservations.css">
+    <link rel="stylesheet" href="./assets/css/styles_footer.css">
+
+    <script type="text/javascript" src="./js/reservation.js" async></script>
+</head>
+
+<body>
+    <%- include('header') %>
+    <main>
+        <section class="box">
+            <div class="polaroid polaroidStyle ">
+                <img src="assets/images/depannage1.jpg" alt="image depannage et fusible" style="width:100%">
+                <div class="container">
+                    <h3>Dépannage</h3>
+                    <p class="description"> ElecOmega s’engage à améliorer votre confort au quotidien et vous propose le
+                        diagnostic et le dépannage de vos installations électriques et de vos portails.<br>
+
+                        Vous avez-la possibilité de réservez un creneau en ligne qui vous sera confirmer par un
+                        technicien<br>
+                        diagnostic et le dépannage de vos installations électriques et de vos portails.
+
+                        Pour toute demande complémentaire concernant une intervention en dépannage,vous<br>
+                        vous avez la possibilité de nous contacter en cliquant sur le bouton ci.
+                    </p><br>
+                </div>
+            </div>
+            <div class="polaroid2 polaroidStyle ">
+                <img src="assets/images/elec1.jpg" alt="image depannage et fusible" style="width:100%">
+                <div class="container">
+                    <h3>Installations</h3>
+                    <p class="description"> ElecOmega s’engage à améliorer votre confort au quotidien et vous propose le
+                        diagnostic et le dépannage de vos installations électriques et de vos portails.<br>
+
+                        Vous avez-la possibilité de réservez un creneau en ligne qui vous sera confirmer par un
+                        technicien<br>
+                        diagnostic et le dépannage de vos installations électriques et de vos portails.
+
+                        Pour toute demande complémentaire concernant une intervention en dépannage,vous<br>
+                        vous avez la possibilité de nous contacter en cliquant sur le bouton ci.
+                    </p><br>
+                </div>
+            </div>
+            <div class="polaroid3 polaroidStyle ">
+                <img src="assets/images/maintenance1.jpg" alt="image depannage et fusible" style="width:100%">
+                <div class="container">
+                    <h3>Maintenance</h3>
+                    <p class="description"> ElecOmega s’engage à améliorer votre confort au quotidien et vous propose le
+                        diagnostic et le dépannage de vos installations électriques et de vos portails.<br>
+
+                        Vous avez-la possibilité de réservez un creneau en ligne qui vous sera confirmer par un
+                        technicien<br>
+                        diagnostic et le dépannage de vos installations électriques et de vos portails.
+
+                        Pour toute demande complémentaire concernant une intervention en dépannage,vous<br>
+                        vous avez la possibilité de nous contacter en cliquant sur le bouton ci.
+                    </p><br>
+                </div>
+            </div>
+            <!--Ici le formulaire-->
+            <div class="form">
+                <form>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Prestations">Prestations:</label>
+                        </div>
+                        <div class="col-75">
+                            <select class="selecValue" name="prestations">
+                                <option value="">Choix de la prestation</option>
+                                <option value="1">Installations</option>
+                                <option value="2">Maintenance</option>
+                                <option value="3">Dépannage</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="date">Date:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="date" name="date" placeholder="votre date..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="contactPerson">Nom:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="nom" name="nom" placeholder="personne a contacter..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="tel">Téléphone:</label>
+                        </div>
+                        <div class="col-75">
+                            <input 
+                                type="tel" 
+                                id="tel" 
+                                name="phone" 
+                                pattern="(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" 
+                                required
+                            >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="tel">Email:</label>
+                        </div>
+                        <div class="col-75">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}"
+                                required
+                            >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="precisions">Précisions:</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="precisions" name="precisions" placeholder="notez vos précisions..."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Valider">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <%- include('footer') %>
+</body>
+</html>

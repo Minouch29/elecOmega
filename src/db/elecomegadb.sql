@@ -27,21 +27,6 @@ USE `elecomegadb`;
 -- --------------------------------------------------------
 
 --
--- Structure de la table `admin`
---
-
-CREATE TABLE IF NOT EXISTS `admin` (
-  `id_admin` int(11) NOT NULL AUTO_INCREMENT,
-  `name_admin` varchar(50) NOT NULL,
-  `email_admin` varchar(255) NOT NULL,
-  `id_user` int(11) NOT NULL,
-  PRIMARY KEY (`id_admin`),
-  KEY `id_user` (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `utilisateurs`
 --
 

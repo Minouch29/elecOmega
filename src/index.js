@@ -13,7 +13,7 @@ const success = () => {
 
     app.use('/', express.static('src/resources/static'));
 
-    app.use(bodyParser.urlencoded({ extended: false })); 
+    app.use(bodyParser.urlencoded({ extended: true })); 
     app.use(bodyParser.json()); 
 
     app.get('/', (req, res) => res.render('accueil', {port}));

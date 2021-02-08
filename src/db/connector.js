@@ -76,7 +76,7 @@ const loadDataBase = (success, error) => {
           (err, result) => {
             if(err) {
                 error(err);
-                returnno;
+                return;
             }
             if (result.length) {
               console.log('Database already exist, USE IT !!!');

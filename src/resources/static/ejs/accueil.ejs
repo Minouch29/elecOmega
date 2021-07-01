@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+            name="description" 
+            content="Elec Ω vous accompagne dans tous vos projets, pour des missions d'installation, de maintenance et de dépannage. 
+                     N'hésitez pas à prendre contact avec nous pour toute demande, nous vous répondrons dans les plus bref délais." 
+        >
+        <script>
+            const port = "<%= port %>";
+        </script>
+
+        <link rel="stylesheet" href="assets/css/styles_icones.css">
+        <link rel="stylesheet" href="assets/css/styles_header.css">
+        <link rel="stylesheet" href="assets/css/styles_accueil.css">
+        <link rel="stylesheet" href="assets/css/styles_footer.css">
+        <title>Elec Ω - Électricité et domotique</title>
+        
+    </head>
+    <body>
+        <%- include('header') %>
+        <main>
+            <div class="container">  
+                <section class="presentation">
+                    <div class="paragraphe">
+                        <h2>électricité et Domotique</h2>
+                        <p>Vous êtes à la recherche d'un artisan electricien sérieux et compétent ?</p>               
+                        <p> Contactez Elec Ω, électricien/domotique à Calvisson(30420).</p>
+                        <p>
+                            Riche de son expérience et spécialisée dans les secteurs de la domotique, électricité 
+                            et la pose de portail (motorisé ou non),
+                            Elec Ω vous accompagne dans tous vos projets, que ce soit pour des missions d'installation, 
+                            de maintenance ou de dépannage. 
+                        </p>
+                        <p>Elec Ω intervient dans les secteurs de Calvisson et de Montpellier.</p>
+                        <p>
+                            Parce que chaque projet est unique, votre électricien dialogue avec vous afin d'identifier 
+                            vos besoins et objectifs. Ensuite nous vous proposons la solution la plus adaptée à votre projet.
+                        </p>
+                        <p>
+                            Un projet, une question, ou autre demande, n'hésitez-pas à <a href="/contact">nous contactez</a>, 
+                            nous vous répondrons dans les plus brefs délais.
+                        </p>
+                    </div>
+                    <img src="assets/images/electricite-elecOmega.jpg" alt="plusieurs icones représentant le métier d'électricien">
+                </section> 
+                <section class="prestationsContainer"> 
+                    <h2>Prestations</h2>
+                    <div class="prestations">
+                        <figure>
+                            <a href="/installations">
+                                <img src="assets/images/elecOmega-installations.jpg" alt="installations">
+                            </a>
+                            <figcaption>Installations</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="/depannage">
+                                <img src="assets/images/elecOmega-depannage.jpg" alt="depannage">
+                            </a>  
+                            <figcaption>Dépannage</figcaption>  
+                        </figure>
+                        <figure>
+                            <a href="/maintenance">
+                                <img src="assets/images/elecOmega-maintenance.jpg" alt="maintenance">
+                            </a>
+                            <figcaption>Maintenance</figcaption>
+                        </figure>
+                    </div> 
+                </section>
+                <section class="engagementsContainer">
+                    <h2>Nos engagements</h2>
+                    <div class="engagements">
+                        <div class="securite">
+                            <figure>
+                                <img src="assets/images/elecOmega-securite.png" alt="ouvrier avec casque">
+                                <figcaption>
+                                    SÉCURITÉ
+                                    <hr>
+                                    <p>
+                                    Elec Ω adopte toutes les mesures de sécurité pour vous, client, et pour nous, professionnel.
+                                    Nous faisons de votre satisfaction, notre priorité.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="rapidite">
+                            <figure>
+                                <img src="assets/images/elecOmega-rapidite.png" alt="compteur vitesse">
+                                <figcaption>
+                                    RAPIDITÉ
+                                    <hr>
+                                    <p>
+                                        Elec Ω s'engage à travailler selon un code de conduite bien défini, dans lequel la rapidité
+                                        d'intervention est au premier plan.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="qualite">
+                            <figure>
+                                <img src="assets/images/elecOmega-qualite.png" alt="ampoule">
+                                <figcaption>
+                                    QUALITÉ
+                                    <hr>
+                                    <p>
+                                        Elec Ω vous apporte des prestations qualitatives à la hauteur de vos attentes respectueuses de 
+                                        l'environnement et des normes en vigueur.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>  
+                    </div>
+                </section>
+            </div>
+        </main>
+        <%- include('footer') %>
+    </body>
+</html>

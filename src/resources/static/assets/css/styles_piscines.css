@@ -1,0 +1,144 @@
+:root{ --yellow: #FFCC00; }
+
+body{ width: 100%; }
+ 
+.container{
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    color:rgb(8, 8, 85);
+}
+
+.text{
+    margin-top:50px;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    background-color: var(--yellow);
+    border-radius: 25px;
+}
+
+.text p{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.text a{
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    background-color:- var(--yellow);
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.text a:hover{
+    border: 1px solid red;
+    background-color: white;
+    color:var(--yellow);
+    font-weight: bold;
+}
+
+
+a{ text-decoration: none; }
+
+.container img{
+    display: block;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    border: 3px solid var(--yellow);
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #61605e;
+}
+
+#elecCables{
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+#elecCompteur{ margin-left: 100px; }
+
+/*---------------------*\
+    @MEDIA
+\*---------------------*/
+@media screen and (max-width: 1024px){
+    body{ width: auto; }
+    
+    .container{
+        width: 100%;
+        margin: 0;
+        display: inline;
+    }
+  
+    .container p{ font-size: 0.8em; }
+  
+    h2{
+        text-align: center;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+    .text{
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+        padding: 30px;
+        background-color: var(--yellow);
+        border-radius: 25px;
+    }
+
+    .text p{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .text a{
+        width: 100px;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px black;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .container img{
+        display: block;
+        width: 250px;
+        height: auto;
+        padding: 10px;
+        border: 3px solid var(--yellow);
+        border-radius: 30px;
+    }
+    
+    #elecCables, #elecCompteur{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+}

@@ -20,7 +20,7 @@ h2{
 }
 
 .text{
-    margin-top: 20px;
+    margin-top:50px;
     width: 500px;
     height: auto;
     padding: 30px;
@@ -32,6 +32,7 @@ h2{
     font-size: 1.3em;
     text-align: center;
     font-weight: bold;
+    margin-top: 90px;
 }
 
 .text a{
@@ -40,7 +41,7 @@ h2{
     margin: auto;
     padding: 10px;
     color: white;
-    background-color: black;
+    background-color:- var(--yellow);
     border: 1px solid white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
@@ -49,11 +50,12 @@ h2{
 }
 
 .text a:hover{
-    border: 1px solid black;
+    border: 1px solid red;
     background-color: white;
-    color: black;
+    color:var(--yellow);
     font-weight: bold;
 }
+
 
 a{ text-decoration: none; }
 
